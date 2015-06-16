@@ -12,7 +12,10 @@ Router.map(function() {
   this.resource('bills', function() {
     this.resource('bill', { path: 'bill/:'});
   });
-  this.resource('committees');
+  this.resource('house');
+  this.resource('senate');
+  // this.resource('committees', function() {
+  // });
 });
 
 
