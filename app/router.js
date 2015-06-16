@@ -10,6 +10,8 @@ Router.map(function() {
     this.resource('contact', {path: 'contact/:zip'});
   });
   this.resource('bills');
+  this.resource('committees');
 });
+
 
 export default Router;
