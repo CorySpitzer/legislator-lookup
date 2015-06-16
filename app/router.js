@@ -9,6 +9,7 @@ Router.map(function() {
   this.resource('legislators', { path: '/'}, function() {
     this.resource('contact', {path: 'contact/:zip'});
   });
+  this.resource('bills');
 });
 
 export default Router;
