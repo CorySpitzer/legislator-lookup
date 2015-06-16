@@ -1,5 +1,10 @@
 <ul>
   {{#each bill in model}}
-    <li><h4>{{bill.bill_id}}:</h4><h5>{{bill.official_title}}</h5></li>
+    <li>
+      {{#link-to 'bill' bill.id}}
+        <h4>{{bill.bill_id}}:</h4>
+      {{/link-to}}
+      <h5>{{bill.official_title}}</h5>
+    </li>
   {{/each}}
 </ul>
