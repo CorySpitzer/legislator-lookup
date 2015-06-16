@@ -1,10 +1,16 @@
-<ul>
-  {{#each bill in model}}
-    <li>
-      {{#link-to 'bill' bill.id}}
-        <h4>{{bill.bill_id}}:</h4>
-      {{/link-to}}
-      <h5>{{bill.official_title}}</h5>
-    </li>
-  {{/each}}
-</ul>
+<div class='col-md-6'>
+  <ul>
+    {{#each bill in model}}
+      <li>
+        {{#link-to 'bill' bill.bill_id}}
+          <h4>{{bill.bill_id}}:</h4>
+        {{/link-to}}
+        <h5>{{bill.official_title}}</h5>
+      </li>
+    {{/each}}
+  </ul>
+</div>
+
+<div class='col-md-6'>
+  {{outlet}}
+</div>

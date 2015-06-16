@@ -10,7 +10,7 @@ Router.map(function() {
     this.resource('contact', {path: 'contact/:zip'});
   });
   this.resource('bills', function() {
-    this.resource('bill', { path: 'bill/:'});
+    this.resource('bill', { path: ':bill_id'});
   });
   this.resource('house');
   this.resource('senate');
