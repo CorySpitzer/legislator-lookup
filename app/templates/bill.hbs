@@ -3,6 +3,9 @@
 </h2>
 <p>
   <li>
-    {{model.bill_id}}
+    <p>sponsor: {{model.sponsor.title}}
+      {{model.sponsor.first_name}} {{model.sponsor.last_name}}</p>
+    <p>Committees: {{model.committee_ids}}</p>
+    <p>Date Introduced: {{model.introduced_on}}</p>
   </li>
 </p>
